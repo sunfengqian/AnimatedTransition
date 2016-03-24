@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  MyCollectionViewCell.m
 //  UICollectionViewTransition
 //
 //  Created by hahajing on 16/3/24.
 //  Copyright © 2016年 hahajing. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MyCollectionViewCell.h"
 
-@interface ViewController : UIViewController
-
+@implementation MyCollectionViewCell
 
 @end
-
