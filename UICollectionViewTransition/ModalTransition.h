@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
+@import UIKit;
 
 typedef NS_ENUM(NSInteger, ModalTransitionType) {
     ModalTransitionTypePresent,

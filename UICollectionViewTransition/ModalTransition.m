@@ -33,7 +33,7 @@
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 1.5;
+    return 1.0;
 }
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
@@ -111,7 +111,6 @@
     UIView *container = [transitionContext containerView];
     
     [container addSubview:toVC.view];
-    [container bringSubviewToFront:fromVC.view];
     
     // 改变m34
     CATransform3D transform = CATransform3DIdentity;
@@ -121,9 +120,9 @@
     // 设置anchorPoint 和 position
     CGRect initalFrame = [transitionContext initialFrameForViewController:fromVC];
     toVC.view.frame = initalFrame;
-    toVC.view.frame = initalFrame;
     toVC.view.layer.anchorPoint = CGPointMake(0, 0.5);
     toVC.view.layer.position = CGPointMake(0, initalFrame.size.height/2);
+    toVC.view.layer.transform = CATransform3DMakeRotation(-M_PI_2, 0, 1, 0);
     
     // 添加阴影
     CAGradientLayer *shadowLayer = [CAGradientLayer layer];
@@ -134,25 +133,26 @@
     UIView *shadow = [[UIView alloc] initWithFrame:initalFrame];
     shadow.backgroundColor = [UIColor clearColor];
     [shadow.layer addSublayer:shadowLayer];
-    [fromVC.view addSubview:shadow];
-    shadow.alpha = 0;
+    [toVC.view addSubview:shadow];
+    shadow.alpha = 1;
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         
-        fromVC.view.layer.transform = CATransform3DMakeRotation(-M_PI_2, 0, 1, 0);
-        shadow.alpha = 1;
+        toVC.view.layer.transform = CATransform3DIdentity;
+        shadow.alpha = 0;
         
     } completion:^(BOOL finished) {
         
-        fromVC.view.layer.anchorPoint = CGPointMake(0.5, 0.5);
-        fromVC.view.layer.position = CGPointMake(CGRectGetMidX(initalFrame), CGRectGetMidY(initalFrame));
-        fromVC.view.layer.transform = CATransform3DIdentity;
+        toVC.view.layer.anchorPoint = CGPointMake(0.5, 0.5);
+        toVC.view.layer.position = CGPointMake(CGRectGetMidX(initalFrame), CGRectGetMidY(initalFrame));
+        toVC.view.layer.transform = CATransform3DIdentity;
         [shadow removeFromSuperview];
         
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         
         
     }];
+    
 }
 
 @end

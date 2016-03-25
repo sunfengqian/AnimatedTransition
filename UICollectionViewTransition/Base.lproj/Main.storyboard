@@ -49,6 +49,7 @@
                     <connections>
                         <segue destination="g85-Pm-vCW" kind="show" identifier="MyCollectionViewController" id="tss-xq-ma0"/>
                         <segue destination="bSW-fM-4uE" kind="show" identifier="ModalViewController" id="gVe-OP-dOQ"/>
+                        <segue destination="9eO-nl-o8z" kind="show" identifier="OtherViewController" id="rqt-eD-gbf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mBS-0Q-4K5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -88,7 +89,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="70" id="KgP-dv-3kn"/>
                                             </constraints>
-                                            <mutableString key="text">仔细的你一定会发现，以上代码尽管实现了手势驱动，但是点击按钮dismiss的功能无法使用了。这是因为，如果只是返回self.panInteractiveTransition, 那么点击按钮dismiss的动画将无法使用；如果只是返回nil, 那么手势滑动的效果将会无法使用。
+                                            <string key="text">仔细的你一定会发现，以上代码尽管实现了手势驱动，但是点击按钮dismiss的功能无法使用了。这是因为，如果只是返回self.panInteractiveTransition, 那么点击按钮dismiss的动画将无法使用；如果只是返回nil, 那么手势滑动的效果将会无法使用。
 
 综上，我们应该分情况分别返回。
 
@@ -98,7 +99,7 @@
 
 对与Navigation Controller的Push和Pop切换也是有相应的一套方法的。实现起来和dismiss十分类似，只不过对应UIViewControllerTransitioningDelegate的询问动画和交互的方法换到了UINavigationControllerDelegate中（为了区别push或者pop，看一下这个接口应该能马上知道）。
 
-需要特别一提的是，Github上的ColinEberhardt的VCTransitionsLibrary已经为我们提供了一系列的VC自定义切换动画效果。在这上面修修改改能获得更炫的转场动画，一起来创造吧！</mutableString>
+需要特别一提的是，Github上的ColinEberhardt的VCTransitionsLibrary已经为我们提供了一系列的VC自定义切换动画效果。在这上面修修改改能获得更炫的转场动画，一起来创造吧！</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -140,6 +141,24 @@
             </objects>
             <point key="canvasLocation" x="78" y="-1171"/>
         </scene>
+        <!--Other View Controller-->
+        <scene sceneID="BYD-Da-YP7">
+            <objects>
+                <viewController id="9eO-nl-o8z" customClass="OtherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D2m-2k-rRw"/>
+                        <viewControllerLayoutGuide type="bottom" id="fNu-gd-nWI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xbp-me-0WU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBe-wA-tXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="177"/>
+        </scene>
         <!--modal-->
         <scene sceneID="YmM-ls-Ixo">
             <objects>
@@ -170,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S22-kM-eHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="68" y="-251"/>
+            <point key="canvasLocation" x="78" y="-477"/>
         </scene>
         <!--detail-->
         <scene sceneID="n1h-dv-L6n">
@@ -277,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CtI-Iw-6jG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="851" y="-251"/>
+            <point key="canvasLocation" x="835" y="-477"/>
         </scene>
     </scenes>
     <resources>
