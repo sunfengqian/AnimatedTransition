@@ -34,4 +34,6 @@
 
 - (void)addBottomView {}
 
+- (void)curtImageWithIdentifer:(NSString *)identifier {}
+
 @end
