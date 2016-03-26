@@ -22,7 +22,8 @@ static NSString * const reuseIdentifer = @"cellIdentifer";
     [super viewDidLoad];
     
     self.dataArray = @[@{@"title":@"UICollectionViewController Demo", @"class":@"MyCollectionViewController"},
-                       @{@"title":@"ModalViewController Demo", @"class":@"ModalViewController"}];
+                       @{@"title":@"ModalViewController Demo", @"class":@"ModalViewController"},
+                       @{@"title":@"OtherViewController", @"class":@"OtherViewController"}];
     
 }
 

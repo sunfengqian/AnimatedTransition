@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C3B655F1CA502CE00D32598 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B655E1CA502CE00D32598 /* OtherViewController.m */; };
+		7C3B65631CA51B0300D32598 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B65621CA51B0300D32598 /* PageView.m */; };
 		7CF105281CA37ADC00094C38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF105271CA37ADC00094C38 /* main.m */; };
 		7CF1052B1CA37ADC00094C38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF1052A1CA37ADC00094C38 /* AppDelegate.m */; };
 		7CF105311CA37ADC00094C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF1052F1CA37ADC00094C38 /* Main.storyboard */; };
@@ -20,9 +22,16 @@
 		7CF1054F1CA3BD4C00094C38 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF1054E1CA3BD4C00094C38 /* ModalViewController.m */; };
 		7CF105521CA3BD7100094C38 /* ModalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF105511CA3BD7100094C38 /* ModalDetailViewController.m */; };
 		7CF105551CA3C58C00094C38 /* ModalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF105541CA3C58C00094C38 /* ModalTransition.m */; };
+		A4C61D89726B661167EA0067 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF73F7EA56EC985EB46FD92 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0071543CD679C762B1133EA1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		433DB31FC498BEA2DA29C311 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7C3B655D1CA502CE00D32598 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		7C3B655E1CA502CE00D32598 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		7C3B65611CA51B0300D32598 /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
+		7C3B65621CA51B0300D32598 /* PageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
 		7CF105231CA37ADC00094C38 /* UICollectionViewTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF105271CA37ADC00094C38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CF105291CA37ADC00094C38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +56,7 @@
 		7CF105511CA3BD7100094C38 /* ModalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalDetailViewController.m; sourceTree = "<group>"; };
 		7CF105531CA3C58C00094C38 /* ModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTransition.h; sourceTree = "<group>"; };
 		7CF105541CA3C58C00094C38 /* ModalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTransition.m; sourceTree = "<group>"; };
+		BFF73F7EA56EC985EB46FD92 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,17 +64,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C61D89726B661167EA0067 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C3B65601CA51AF000D32598 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				7C3B65611CA51B0300D32598 /* PageView.h */,
+				7C3B65621CA51B0300D32598 /* PageView.m */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		7CF1051A1CA37ADC00094C38 = {
 			isa = PBXGroup;
 			children = (
 				7CF105251CA37ADC00094C38 /* UICollectionViewTransition */,
 				7CF105241CA37ADC00094C38 /* Products */,
+				D2CDFA9F8CB287691962F34C /* Pods */,
+				F3D5976B7B2F9CF35B513CBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +121,9 @@
 				7CF1054E1CA3BD4C00094C38 /* ModalViewController.m */,
 				7CF105501CA3BD7100094C38 /* ModalDetailViewController.h */,
 				7CF105511CA3BD7100094C38 /* ModalDetailViewController.m */,
+				7C3B655D1CA502CE00D32598 /* OtherViewController.h */,
+				7C3B655E1CA502CE00D32598 /* OtherViewController.m */,
+				7C3B65601CA51AF000D32598 /* New Group */,
 			);
 			path = UICollectionViewTransition;
 			sourceTree = "<group>";
@@ -122,6 +147,23 @@
 			name = Transition;
 			sourceTree = "<group>";
 		};
+		D2CDFA9F8CB287691962F34C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0071543CD679C762B1133EA1 /* Pods.debug.xcconfig */,
+				433DB31FC498BEA2DA29C311 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3D5976B7B2F9CF35B513CBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF73F7EA56EC985EB46FD92 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CF1053A1CA37ADC00094C38 /* Build configuration list for PBXNativeTarget "UICollectionViewTransition" */;
 			buildPhases = (
+				BCE649340515FB627523388B /* Check Pods Manifest.lock */,
 				7CF1051F1CA37ADC00094C38 /* Sources */,
 				7CF105201CA37ADC00094C38 /* Frameworks */,
 				7CF105211CA37ADC00094C38 /* Resources */,
+				7D957B8924AAB5A244FF2BA8 /* Embed Pods Frameworks */,
+				B611C5BC92F373DE82E753FC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,13 +232,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D957B8924AAB5A244FF2BA8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B611C5BC92F373DE82E753FC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCE649340515FB627523388B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CF1051F1CA37ADC00094C38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7CF1053F1CA3813700094C38 /* MyCollectionViewController.m in Sources */,
+				7C3B65631CA51B0300D32598 /* PageView.m in Sources */,
 				7CF1052B1CA37ADC00094C38 /* AppDelegate.m in Sources */,
+				7C3B655F1CA502CE00D32598 /* OtherViewController.m in Sources */,
 				7CF105281CA37ADC00094C38 /* main.m in Sources */,
 				7CF105421CA3816800094C38 /* MyCollectionViewCell.m in Sources */,
 				7CF105551CA3C58C00094C38 /* ModalTransition.m in Sources */,
@@ -309,6 +404,7 @@
 		};
 		7CF1053B1CA37ADC00094C38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0071543CD679C762B1133EA1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UICollectionViewTransition/Info.plist;
@@ -320,6 +416,7 @@
 		};
 		7CF1053C1CA37ADC00094C38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433DB31FC498BEA2DA29C311 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UICollectionViewTransition/Info.plist;
@@ -348,6 +445,7 @@
 				7CF1053C1CA37ADC00094C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
