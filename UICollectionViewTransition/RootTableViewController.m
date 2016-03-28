@@ -18,12 +18,18 @@ static NSString * const reuseIdentifer = @"cellIdentifer";
 
 @implementation RootTableViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setShadowImage:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.dataArray = @[@{@"title":@"UICollectionViewController Demo", @"class":@"MyCollectionViewController"},
                        @{@"title":@"ModalViewController Demo", @"class":@"ModalViewController"},
-                       @{@"title":@"OtherViewController", @"class":@"OtherViewController"}];
+                       @{@"title":@"OtherViewController", @"class":@"OtherViewController"},
+                       @{@"title":@"AutoreleasePool ", @"class":@"AutoreleasePooVC"}];
     
 }
 

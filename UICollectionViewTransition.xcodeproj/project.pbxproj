@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C11276C1CA8D5A40040D1FE /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11276B1CA8D5A40040D1FE /* CircleViewController.m */; };
+		7C1127921CA8DBCF0040D1FE /* OtherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1127911CA8DBCF0040D1FE /* OtherDetailViewController.m */; };
+		7C1127951CA8DC4F0040D1FE /* OtherTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1127941CA8DC4F0040D1FE /* OtherTransition.m */; };
+		7C11279E1CA91E150040D1FE /* CircleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C11279D1CA91E150040D1FE /* CircleDetailViewController.m */; };
+		7C1127A11CA9246A0040D1FE /* CircleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1127A01CA9246A0040D1FE /* CircleTransition.m */; };
 		7C3B655F1CA502CE00D32598 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B655E1CA502CE00D32598 /* OtherViewController.m */; };
 		7C3B65631CA51B0300D32598 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3B65621CA51B0300D32598 /* PageView.m */; };
 		7CF105281CA37ADC00094C38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF105271CA37ADC00094C38 /* main.m */; };
@@ -28,6 +33,16 @@
 /* Begin PBXFileReference section */
 		0071543CD679C762B1133EA1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		433DB31FC498BEA2DA29C311 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7C11276A1CA8D5A40040D1FE /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		7C11276B1CA8D5A40040D1FE /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		7C1127901CA8DBCF0040D1FE /* OtherDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherDetailViewController.h; sourceTree = "<group>"; };
+		7C1127911CA8DBCF0040D1FE /* OtherDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherDetailViewController.m; sourceTree = "<group>"; };
+		7C1127931CA8DC4F0040D1FE /* OtherTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherTransition.h; sourceTree = "<group>"; };
+		7C1127941CA8DC4F0040D1FE /* OtherTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherTransition.m; sourceTree = "<group>"; };
+		7C11279C1CA91E150040D1FE /* CircleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleDetailViewController.h; sourceTree = "<group>"; };
+		7C11279D1CA91E150040D1FE /* CircleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleDetailViewController.m; sourceTree = "<group>"; };
+		7C11279F1CA9246A0040D1FE /* CircleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTransition.h; sourceTree = "<group>"; };
+		7C1127A01CA9246A0040D1FE /* CircleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTransition.m; sourceTree = "<group>"; };
 		7C3B655D1CA502CE00D32598 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		7C3B655E1CA502CE00D32598 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		7C3B65611CA51B0300D32598 /* PageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
@@ -71,13 +86,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7C3B65601CA51AF000D32598 /* New Group */ = {
+		7C1127961CA8F7F80040D1FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7CF105401CA3816800094C38 /* MyCollectionViewCell.h */,
+				7CF105411CA3816800094C38 /* MyCollectionViewCell.m */,
 				7C3B65611CA51B0300D32598 /* PageView.h */,
 				7C3B65621CA51B0300D32598 /* PageView.m */,
 			);
-			name = "New Group";
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7C1127971CA905E60040D1FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C1127981CA906040040D1FE /* UICollectionView */,
+				7C1127991CA906180040D1FE /* ModalViewController */,
+				7C11279A1CA9062B0040D1FE /* OtherViewController */,
+				7C11279B1CA9064C0040D1FE /* Autorelease */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7C1127981CA906040040D1FE /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7CF1053D1CA3813700094C38 /* MyCollectionViewController.h */,
+				7CF1053E1CA3813700094C38 /* MyCollectionViewController.m */,
+				7CF105431CA3856600094C38 /* MyViewController.h */,
+				7CF105441CA3856600094C38 /* MyViewController.m */,
+			);
+			name = UICollectionView;
+			sourceTree = "<group>";
+		};
+		7C1127991CA906180040D1FE /* ModalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CF1054D1CA3BD4C00094C38 /* ModalViewController.h */,
+				7CF1054E1CA3BD4C00094C38 /* ModalViewController.m */,
+				7CF105501CA3BD7100094C38 /* ModalDetailViewController.h */,
+				7CF105511CA3BD7100094C38 /* ModalDetailViewController.m */,
+			);
+			name = ModalViewController;
+			sourceTree = "<group>";
+		};
+		7C11279A1CA9062B0040D1FE /* OtherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C3B655D1CA502CE00D32598 /* OtherViewController.h */,
+				7C3B655E1CA502CE00D32598 /* OtherViewController.m */,
+				7C1127901CA8DBCF0040D1FE /* OtherDetailViewController.h */,
+				7C1127911CA8DBCF0040D1FE /* OtherDetailViewController.m */,
+			);
+			name = OtherViewController;
+			sourceTree = "<group>";
+		};
+		7C11279B1CA9064C0040D1FE /* Autorelease */ = {
+			isa = PBXGroup;
+			children = (
+				7C11276A1CA8D5A40040D1FE /* CircleViewController.h */,
+				7C11276B1CA8D5A40040D1FE /* CircleViewController.m */,
+				7C11279C1CA91E150040D1FE /* CircleDetailViewController.h */,
+				7C11279D1CA91E150040D1FE /* CircleDetailViewController.m */,
+			);
+			name = Autorelease;
 			sourceTree = "<group>";
 		};
 		7CF1051A1CA37ADC00094C38 = {
@@ -101,7 +173,9 @@
 		7CF105251CA37ADC00094C38 /* UICollectionViewTransition */ = {
 			isa = PBXGroup;
 			children = (
-				7CF105461CA3891800094C38 /* Transition */,
+				7C1127971CA905E60040D1FE /* Controllers */,
+				7C1127961CA8F7F80040D1FE /* Views */,
+				7CF105461CA3891800094C38 /* Transitions */,
 				7CF105291CA37ADC00094C38 /* AppDelegate.h */,
 				7CF1052A1CA37ADC00094C38 /* AppDelegate.m */,
 				7CF1054A1CA3BB2E00094C38 /* RootTableViewController.h */,
@@ -111,19 +185,6 @@
 				7CF105341CA37ADC00094C38 /* LaunchScreen.storyboard */,
 				7CF105371CA37ADC00094C38 /* Info.plist */,
 				7CF105261CA37ADC00094C38 /* Supporting Files */,
-				7CF1053D1CA3813700094C38 /* MyCollectionViewController.h */,
-				7CF1053E1CA3813700094C38 /* MyCollectionViewController.m */,
-				7CF105401CA3816800094C38 /* MyCollectionViewCell.h */,
-				7CF105411CA3816800094C38 /* MyCollectionViewCell.m */,
-				7CF105431CA3856600094C38 /* MyViewController.h */,
-				7CF105441CA3856600094C38 /* MyViewController.m */,
-				7CF1054D1CA3BD4C00094C38 /* ModalViewController.h */,
-				7CF1054E1CA3BD4C00094C38 /* ModalViewController.m */,
-				7CF105501CA3BD7100094C38 /* ModalDetailViewController.h */,
-				7CF105511CA3BD7100094C38 /* ModalDetailViewController.m */,
-				7C3B655D1CA502CE00D32598 /* OtherViewController.h */,
-				7C3B655E1CA502CE00D32598 /* OtherViewController.m */,
-				7C3B65601CA51AF000D32598 /* New Group */,
 			);
 			path = UICollectionViewTransition;
 			sourceTree = "<group>";
@@ -136,15 +197,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7CF105461CA3891800094C38 /* Transition */ = {
+		7CF105461CA3891800094C38 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
 				7CF105471CA3893E00094C38 /* MyAnimateTransition.h */,
 				7CF105481CA3893E00094C38 /* MyAnimateTransition.m */,
 				7CF105531CA3C58C00094C38 /* ModalTransition.h */,
 				7CF105541CA3C58C00094C38 /* ModalTransition.m */,
+				7C1127931CA8DC4F0040D1FE /* OtherTransition.h */,
+				7C1127941CA8DC4F0040D1FE /* OtherTransition.m */,
+				7C11279F1CA9246A0040D1FE /* CircleTransition.h */,
+				7C1127A01CA9246A0040D1FE /* CircleTransition.m */,
 			);
-			name = Transition;
+			name = Transitions;
 			sourceTree = "<group>";
 		};
 		D2CDFA9F8CB287691962F34C /* Pods */ = {
@@ -285,15 +350,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1127A11CA9246A0040D1FE /* CircleTransition.m in Sources */,
 				7CF1053F1CA3813700094C38 /* MyCollectionViewController.m in Sources */,
 				7C3B65631CA51B0300D32598 /* PageView.m in Sources */,
 				7CF1052B1CA37ADC00094C38 /* AppDelegate.m in Sources */,
+				7C11276C1CA8D5A40040D1FE /* CircleViewController.m in Sources */,
 				7C3B655F1CA502CE00D32598 /* OtherViewController.m in Sources */,
 				7CF105281CA37ADC00094C38 /* main.m in Sources */,
+				7C1127951CA8DC4F0040D1FE /* OtherTransition.m in Sources */,
 				7CF105421CA3816800094C38 /* MyCollectionViewCell.m in Sources */,
+				7C11279E1CA91E150040D1FE /* CircleDetailViewController.m in Sources */,
 				7CF105551CA3C58C00094C38 /* ModalTransition.m in Sources */,
 				7CF1054F1CA3BD4C00094C38 /* ModalViewController.m in Sources */,
 				7CF105521CA3BD7100094C38 /* ModalDetailViewController.m in Sources */,
+				7C1127921CA8DBCF0040D1FE /* OtherDetailViewController.m in Sources */,
 				7CF105491CA3893E00094C38 /* MyAnimateTransition.m in Sources */,
 				7CF1054C1CA3BB2E00094C38 /* RootTableViewController.m in Sources */,
 				7CF105451CA3856600094C38 /* MyViewController.m in Sources */,

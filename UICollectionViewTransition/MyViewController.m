@@ -22,9 +22,14 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    UIScreenEdgePanGestureRecognizer *gesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(screenEdgePanGesture:)];
-    gesture.edges = UIRectEdgeLeft;
-    [self.view addGestureRecognizer:gesture];
+//    UIScreenEdgePanGestureRecognizer *gesture = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:self action:@selector(screenEdgePanGesture:)];
+//    gesture.edges = UIRectEdgeLeft;
+//    [self.view addGestureRecognizer:gesture];
+
+    // 给detailVC 添加滑动手势
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(screenEdgePanGesture:)];
+    panGesture.maximumNumberOfTouches = 1;
+    [self.view addGestureRecognizer:panGesture];
     
     self.navigationController.delegate = self;
     
@@ -39,7 +44,7 @@
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 
-- (void)screenEdgePanGesture:(UIScreenEdgePanGestureRecognizer *)edgePan {
+- (void)screenEdgePanGesture:(UIPanGestureRecognizer *)edgePan {
     CGFloat progress = [edgePan translationInView:self.view].x / (self.view.bounds.size.width/3*2);
     progress = MIN(progress, 1);
     switch (edgePan.state) {
