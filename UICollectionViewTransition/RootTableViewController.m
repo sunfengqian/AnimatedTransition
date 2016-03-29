@@ -21,15 +21,18 @@ static NSString * const reuseIdentifer = @"cellIdentifer";
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setShadowImage:nil];
+    self.navigationController.delegate = nil;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
     self.dataArray = @[@{@"title":@"UICollectionViewController Demo", @"class":@"MyCollectionViewController"},
                        @{@"title":@"ModalViewController Demo", @"class":@"ModalViewController"},
                        @{@"title":@"OtherViewController", @"class":@"OtherViewController"},
-                       @{@"title":@"AutoreleasePool ", @"class":@"AutoreleasePooVC"}];
+                       @{@"title":@"CircleTransition ", @"class":@"CircleDetailViewController"}];
     
 }
 

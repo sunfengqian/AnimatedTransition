@@ -103,7 +103,7 @@
 				7C1127981CA906040040D1FE /* UICollectionView */,
 				7C1127991CA906180040D1FE /* ModalViewController */,
 				7C11279A1CA9062B0040D1FE /* OtherViewController */,
-				7C11279B1CA9064C0040D1FE /* Autorelease */,
+				7C11279B1CA9064C0040D1FE /* CircleViewController */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -141,7 +141,7 @@
 			name = OtherViewController;
 			sourceTree = "<group>";
 		};
-		7C11279B1CA9064C0040D1FE /* Autorelease */ = {
+		7C11279B1CA9064C0040D1FE /* CircleViewController */ = {
 			isa = PBXGroup;
 			children = (
 				7C11276A1CA8D5A40040D1FE /* CircleViewController.h */,
@@ -149,7 +149,7 @@
 				7C11279C1CA91E150040D1FE /* CircleDetailViewController.h */,
 				7C11279D1CA91E150040D1FE /* CircleDetailViewController.m */,
 			);
-			name = Autorelease;
+			name = CircleViewController;
 			sourceTree = "<group>";
 		};
 		7CF1051A1CA37ADC00094C38 = {

@@ -7,8 +7,11 @@
 //
 
 #import "CircleDetailViewController.h"
+#import "CircleTransition.h"
 
-@interface CircleDetailViewController ()
+@interface CircleDetailViewController () <UINavigationControllerDelegate>
+
+@property (nonatomic, strong) CircleTransition *popTransition;
 
 @end
 
@@ -16,12 +19,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.popButton addTarget:self action:@selector(popButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+//    self.navigationController.delegate = self;
+}
+
+- (void)popButtonAction:(UIButton *)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
+{
+    if (operation == UINavigationControllerOperationPop) {
+        return self.popTransition;
+    }
+    
+    return nil;
+}
+
+- (CircleTransition *)popTransition {
+    if (_popTransition == nil) {
+        _popTransition = [CircleTransition transitionWithType:CircleTransitionTypePop];
+    }
+    return _popTransition;
+    
 }
 
 /*
